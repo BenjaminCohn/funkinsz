@@ -1,0 +1,11 @@
+Header : box shadow - logo - titre - menu
+
+TOP bar : style + évènement hover musique, spot ligth sut le select(ou dégrader hover)
+
+Side bar : 
+    - style manche guitare avec lettre tiers list, avec fleche sur le target
+    - respensive : suppression du style manche, accumulation des boutons en menu deroulant (affichage sur bouton target en mode accumulé)
+
+frame YT
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/nG1gRK5b_v0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/nsQYzdh7fY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

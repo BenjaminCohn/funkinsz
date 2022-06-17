@@ -1,0 +1,8 @@
+Header : box shadow - logo - titre - menu
+
+TOP bar : style + évènement hover musique, spot ligth sut le select(ou dégrader hover)
+
+Side bar : 
+    - style manche guitare avec lettre tiers list, avec fleche sur le target
+    - respensive : suppression du style manche, accumulation des boutons en menu deroulant (affichage sur bouton target en mode accumulé)
+
