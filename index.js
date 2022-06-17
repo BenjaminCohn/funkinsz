@@ -111,7 +111,7 @@ const artistes = [
 
         playTab: "https://www.songsterr.com/a/wsa/royal-blood-come-one-over-tab-s397048",
         playImgTab: "tablature/come_on_over_tab.png",
-        playYt: "https://www.youtube.com/embed/vlSAjp-XaTo/player_api",
+        playYt: "https://www.youtube.com/embed/nG1gRK5b_v0",
     },
     {
         id: 2,
@@ -139,7 +139,7 @@ const artistes = [
 
         playTab: "https://www.songsterr.com/a/wsa/muse-hysteria-bass-tab-s11430",
         playImgTab: "tab/hysteria tab.png",
-        playYt: "https://www.youtube.com/embed/3dm_5qWWDV8/player_api",
+        playYt: "https://www.youtube.com/embed/3dm_5qWWDV8",
         
     },
     {
@@ -168,7 +168,7 @@ const artistes = [
         
         playTab: "https://www.songsterr.com/a/wsa/deep-purple-highway-star-bass-tab-s490",
         playImgTab: "tab/highway star tab.png",
-        playYt: "https://www.youtube.com/embed/LBoHGatV5aQ",
+        playYt: "https://www.youtube.com/embed/3mPHVnmcFZ0",
     },
     {
         id: 4,
@@ -196,7 +196,7 @@ const artistes = [
         
         playTab: "https://www.songsterr.com/a/wsa/red-hot-chili-peppers-around-the-world-bass-tab-s14046",
         playImgTab: "tab/around the world - tab.png",
-        playYt: "https://www.youtube.com/embed/ZqMseqjqwTo",
+        playYt: "https://www.youtube.com/embed/a9eNQZbjpJk",
     },
     {
         id: 5,
