@@ -194,20 +194,37 @@ const artistes = [
         matosEffect4: "Boss ODB-3 Bass OverDrive",
         matosEffect5: "Electro-Harmonix Bassballs Nano",
         
-        playTab: "https://www.songsterr.com/a/wsa/deep-purple-highway-star-bass-tab-s490",
-        playImgTab: "tab/highway star tab.png",
+        playTab: "https://www.songsterr.com/a/wsa/red-hot-chili-peppers-around-the-world-bass-tab-s14046",
+        playImgTab: "tab/around the world - tab.png",
         playYt: "https://www.youtube.com/embed/ZqMseqjqwTo",
     },
     {
         id: 5,
-        firstName: "",
-        lastName: "",
-        picture: "",
-        bioPar1: "",
-        bioPar2: "",
-        bioPar3: "",
-        bioPar4: "",
-        bioPar5: "",
+        firstName: "Duff",
+        lastName: "McKagan",
+        picture: "photo bassist/Duff McKagan.jpg",
+        bioPar1: "Michael Andrew McKagan, dit Duff McKagan, né le 5 février 1964 à Seattle, est un bassiste, guitariste et chanteur américain connu pour avoir joué entre 1985 et 1997, dans le groupe de hard rock Guns N' Roses. Il est l'un des cinq membres emblématiques avec les guitaristes Slash et Izzy Stradlin, le batteur Steven Adler et le chanteur Axl Rose. Il est aussi le bassiste du groupe Velvet Revolver, formé de deux autres anciens membres de GN'R, Slash et Matt Sorum. En 2010, il remplace Eric Avery pendant quelques mois au sein de Jane's Addiction, autre groupe marquant de Los Angeles. Depuis 2011, il se consacre à son groupe Loaded dont il est le chanteur. À partir de 2016, il redevient le bassiste de Guns N' Roses pour la tournée Not in This Lifetime.",
+        bioPar2: "Michael Andrew McKagan est né à Seattle, Washington, il est le plus jeune d'une famille de huit enfants dont les parents sont Elmer et Alice Marie McKagan. Les noms de ses frères et sœurs sont : Jon, Carol, Mark, Bruce, Joan Shelton, Claudia Christiansen et Matt. Il se maria pour la première fois le 28 mai 1988 avec Mandy Brix, une serveuse d'un restaurant japonais de L.A. qui fait aussi partie d'un groupe de rap féminin, « The Lame Flames ». Ils divorcent en 1990. Le bassiste se remarie en septembre 1992 avec Linda Johnson, et divorce en septembre 1995. Le 27 août 1997 est née sa première fille, Grace. Il épouse Susan Holmes le 28 août 1999. Sa deuxième fille, Mae Mary, est née le 16 juillet 2000. Duff mesure 1,91 m, a des cheveux blonds décolorés et les yeux noisette.",
+        bioPar3: "C'est son frère, Bruce, qui l'a amené à faire de la basse. La basse était et reste son instrument de prédilection. Duff a aussi joué de la batterie dans quelques groupes, incluant des concerts avec le légendaire groupe pop-punk de Seattle : The Fastbacks, qu'il a rejoint à l'âge de 15 ans en 1980. Il décrit sa ville natale comme « une bruyante ville rock 'n' roll avec une scène underground ».",
+        bioPar4: "McKagan quitta l'État de Washington pour la Californie à l'âge de 19 ans, et joua dans des douzaines de groupes de rock autour de Los Angeles incluant « Ten Minute Warning » (il fut remplacé par Daniel House de Skin Yard), et un groupe hard-core punk appelé The Fartz. Répondant à une annonce dans un magazine de bassistes, il rencontra le guitariste Slash et le batteur Steven Adler du groupe The Road Crew. Duff cherchait du punk avec un penchant pour le rock des années '70, mais il ne trouva que deux gars aux cheveux longs à la place.",
+        bioPar5: "Il dit « Quand j'ai rencontré Slash et Steven Adler pour la première fois, c'était dingue, parce que je n'avais jamais rencontré des mecs comme eux avant - des gens de L.A. La nuit on sortait et on buvait, et on a eu ce groupe de malades. C'était le groupe de Slash, Road Crew. »",
+    
+        matosBass1: "Fender Aerodyne Jazz Bass",
+        matosBass2: "Fender Duff McKagan Precision Bass",
+        matosBass3: "Fender Jazz Bass Special",
+        
+        matosAmp1: "Gallien-Krueger 800RB Bass Amp Head / Gallien-Krueger 2001RB Amplifier Head / Gallien Krueger MB 800",
+        matosAmp2: "Gallien-Krueger 410RBH 800W 4x10 Bass Cab with Horn",
+
+        matosEffect1: "Tech 21 SansAmp Bass Driver DI",
+        matosEffect2: "MXR M-83 Bass Chorus Deluxe",
+        matosEffect3: "MXR M80 Bass D.I.+",
+        matosEffect4: "TC Electronic Corona Chorus",
+        matosEffect5: "MXR M-182 El Grande™ Bass Fuzz",
+        
+        playTab: "https://www.songsterr.com/a/wsa/guns-n-roses-sweet-child-o-mine-bass-tab-s23",
+        playImgTab: "tab/sweet child o mine - tab.png",
+        playYt: "https://www.youtube.com/embed/1w7OgIMMRc4",
     },
 ]
 
