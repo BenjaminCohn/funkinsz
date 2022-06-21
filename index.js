@@ -13,13 +13,24 @@ const s5 = document.querySelector('.styletb5')
 const container = document.querySelector('.container')
 const sidebar = document.querySelector('div')
 const sd = document.querySelectorAll('div')
+
 const sb1 = document.querySelector('a')
+const idsbS = document.querySelector('#sbS')
+
 const sb2 = document.querySelector('a')
+const idsbA = document.querySelector('#sbA')
+
 const sb3 = document.querySelector('a')
+const idsbB = document.querySelector('#sbB')
+
 const sb4 = document.querySelector('a')
+const idsbC = document.querySelector('#sbC')
+
 const sb5 = document.querySelector('a')
+const idsbD = document.querySelector('#sbD')
 
 const artisteCont = document.querySelector('.content')
+
 
 // burger
 function openNav() {
@@ -29,6 +40,7 @@ function openNav() {
 function closeNav() {
      document.getElementById("myNav").style.width = "0%";
    }
+
 
 // Sound hover TopBar
 
@@ -52,35 +64,6 @@ s5.addEventListener('mouseover', () => {
     console.log('Reggae');
 })
 
-let sbS = document.querySelector('.sba1');
-sbS.addEventListener('click', (event) => {
-    event.preventDefault()
-    displayArtiste(0)
-})
-
-let sbA = document.querySelector('.sba2');
-sbA.addEventListener('click', (event) => {
-    event.preventDefault()
-    displayArtiste(1)
-})
-
-let sbB = document.querySelector('.sba3');
-sbB.addEventListener('click', (event) => {
-    event.preventDefault()
-    displayArtiste(2)
-})
-
-let sbC = document.querySelector('.sba4');
-sbC.addEventListener('click', (event) => {
-    event.preventDefault()
-    displayArtiste(3)
-})
-
-let sbD = document.querySelector('.sba5');
-sbD.addEventListener('click', (event) => {
-    event.preventDefault()
-    displayArtiste(4)
-})
 
 // tableau artistes
 
@@ -90,24 +73,24 @@ const artistes = [
         firstName: "Mike",
         lastName: "Kerr",
         picture: "photo bassist/mike_kerr.jpg",
-        bioPar1: "Mike Kerr (1,87 m - 116 kg), né le 21 décembre 1968 à Toledo dans l'Ohio, surnommé « The Smashing Machine » est un pratiquant américain de combat libre et un ancien champion de lutte. Il fut numéro 1 mondial de 1997 à 2000, avant que sa carrière ne connaisse un lent déclin.",
-        bioPar2: "Mike Kerr a été initialement lutteur. Il est champion universitaire de lutte (NCAA) en 1992, puis champion amateur (FILA) de lutte libre en 1994. De 1999 à 2001, il remporte toutes les compétitions poids lourd de grappling organisées par l'Abu Dhabi Combat Club.",
-        bioPar3: "Kerr est rentré en combat libre en 1997. Il est notamment célèbre pour avoir remporté le tournoi poids lourds de l'UFC 14 le 13 mars 1997 et le tournoi poids lourds de l'UFC 15 le 17 octobre 1997. Il a également combattu au Pride.", 
-        bioPar4: "Numéro 1 mondial du combat libre de 1997 à 2000, craint pour sa lutte et ses coups de genou, il essuie ensuite deux défaites, et disparait du combat libre: dopé et dépendant aux analgésiques, il subit une cure de désintoxication. Son retour, trois ans après s'avèrera désastreux, Kerr étant incapable de retrouver le niveau de son début de carrière, et essuyant de nombreuses défaites, à chaque fois dès le premier round.",
-        bioPar5: "En 2003, HBO sort un documentaire intitulé « The Smashing Machine: The Life and Times of Mark Kerr », un film où l'on suit Kerr dans son entrainement et ses combats professionnels, et où il dévoile sa dépendance aux antalgiques. Ken Shamrock, Bas Rutten et Mark Coleman apparaissent également dans le film.",
+        bioPar1: "Michael Kerr et Ben Thatcher sont Royal Blood, duo rock originaire de Brighton.",
+        bioPar2: "Royal Blood fait partie de ces groupes relativement veinards pour qui tout va très vite, Matt Helders (Arctic Monkeys) qui se balade au Glastonbury avec votre T Shirt alors que vous n'avez pas encore sorti le moindre titre, ça donne une idée de sous quelle étoile sont nés ces deux là. Formé en 2013, le dyptique sort son tout premier single Out of the Black en Novembre, signe chez Warner Records quelques semaines plus tard, le même label qui sortira pour le marché US un EP 4 titres (du même nom) au début de l'année 2014, s'en suivront deux premières parties des Arctic Monkeys, ainsi qu'une tournée des festivals d'été (Download, Reading, Glastonbury, Rock En Seine...).",
+        bioPar3: "ans la foulée un premier album éponyme verra le jour en Aout, dans un style rock pur très riffés, il est impossible de ne pas entendre les influences telles Queens of The Stone Age, Muse, Rage Against The Machine, Triggerfinger ou encore Jack White.", 
+        bioPar4: "",
+        bioPar5: "",
         
-        matosBass1: "Gretsch Electromatic Jr",
-        matosBass2: "Fender StarCaster",
-        matosBass3: "Fender Deluxe Jaguar Bass sur Hook Line and Sinke",
+        matosBass1: "- Gretsch Electromatic Jr",
+        matosBass2: "- Fender StarCaster",
+        matosBass3: "- Fender Deluxe Jaguar Bass sur Hook Line and Sinke",
 
-        matosAmp1: "Ampeg ampli basse SVT",
-        matosAmp2: "2 Ampeg amplis guitare GVT",
+        matosAmp1: "-Ampeg ampli basse SVT",
+        matosAmp2: "- 2 Ampeg amplis guitare GVT",
 
-        matosEffect1: "Electro-Harmonix POG2 Polyphonic Octave Generator",
-        matosEffect2: "Boss PS-6 Harmonist Pitch Shifter",
-        matosEffect3: "ZVex Mastotron Fuzz Pedal",
-        matosEffect4: "Electro-Harmonix Germanium 4 Big Muff Pi",
-        matosEffect5: "Boss LS-2 Line Selector/Power Supply",
+        matosEffect1: "-Electro-Harmonix POG2 Polyphonic Octave Generator",
+        matosEffect2: "- Boss PS-6 Harmonist Pitch Shifter",
+        matosEffect3: "- ZVex Mastotron Fuzz Pedal",
+        matosEffect4: "- Electro-Harmonix Germanium 4 Big Muff Pi",
+        matosEffect5: "- Boss LS-2 Line Selector/Power Supply",
 
         playTab: "https://www.songsterr.com/a/wsa/royal-blood-come-one-over-tab-s397048",
         playImgTab: "tablature/come_on_over_tab.png",
@@ -124,18 +107,18 @@ const artistes = [
         bioPar4: "Christopher est le plus jeune des membres du groupe. Il est séparé de sa femme, Kelly avec qui il a eu six enfants : Alfie (né le 7 juillet 1999), Ava-Jo (née le 31 décembre 2001), Frankie (né le 26 août 2003), Ernie (né le 19 octobre 2008), Buster (né le 4 novembre 2010) et Teddi Dorothy (née le 5 janvier 2012). Le groupe déplaça quelques dates de leurs concerts prévus aux États-Unis à l'automne 2010, afin que le bassiste puisse assister à la naissance de son cinquième enfant.",
         bioPar5: "Bien que très attaché à la tranquillité du Devon, bien plus appropriée selon lui pour sa famille, il décide d’emménager à Dublin en avril 2010 avec son ex-épouse Kelly et leurs enfants. Il explique ce choix par le besoin d'être proche d'un aéroport international tout en confirmant qu'il souhaitait éviter Londres. Cependant, il a été confirmé que lui et sa famille avaient emménagé à Londres, après que le groupe ait émis le souhait de composer leur prochain album tout en vivant tous dans la même ville. Il y vit toujours et est désormais en couple avec une certaine Caris Ball depuis 2017, avec qui il entretenait une amitié de longue date. Ils se sont mariés le 1er décembre 2018. Il a eu avec elle son septième enfant, une fille, Mabel Aurora Ball (née le 3 mars 2020). Le 29 octobre 2021, Chris a eu un nouvel enfant avec Caris Ball, Duke Buddy Ball Wolstenholme (Chris a donc 8 enfants dont 6 de son union avec Kelly, tandis que Caris en a 4 dont 2 d'une union précédente).",
     
-        matosBass1: "Rickenbacker 4001",
-        matosBass2: "Status Chris Wolstenholme Signature Bass",
-        matosBass3: "Kitara Doubleneck Bass",
+        matosBass1: "- Rickenbacker 4001",
+        matosBass2: "- Status Chris Wolstenholme Signature Bass",
+        matosBass3: "- Kitara Doubleneck Bass",
         
-        matosAmp1: "Ampeg ampli basse SVT-VR",
+        matosAmp1: "- Ampeg ampli basse SVT-VR",
         matosAmp2: "",
 
-        matosEffect1: "Way huge Fat Sandwich",
-        matosEffect2: "Zvex Fuzz Mastroton",
-        matosEffect3: "Zvex Wolky Mammoth",
-        matosEffect4: "Akaï Deep Impact",
-        matosEffect5: "OCD Distro",
+        matosEffect1: "- Way huge Fat Sandwich",
+        matosEffect2: "- Zvex Fuzz Mastroton",
+        matosEffect3: "- Zvex Wolky Mammoth",
+        matosEffect4: "- Akaï Deep Impact",
+        matosEffect5: "- OCD Distro",
 
         playTab: "https://www.songsterr.com/a/wsa/muse-hysteria-bass-tab-s11430",
         playImgTab: "tab/hysteria tab.png",
@@ -153,18 +136,18 @@ const artistes = [
         bioPar4: "En mai 1965, le groupe devient professionnel avec l'arrivée de Ian Gillan. Il a vu passer en son sein Mike Underwood (déjà vu avec Ritchie Blackmore).",
         bioPar5: "Le 7 juin 1969, Ian Gillan enregistre avec Deep Purple le single Hallelujah (à l'insu de Nick Simper et Rod Evans) et Roger Glover est convoqué comme musicien de studio. Une semaine après il intègre Deep Purple. Il restera membre du groupe jusqu'en 1973. C'est lui qui aura l'idée du titre du morceau légendaire du groupe : Smoke on the Water, dont l'histoire relate l'incendie du Casino de Montreux. Il est à nouveau membre du groupe lors de son retour en 1984 avec l'album Perfect Strangers, après avoir joué dans le groupe de Ritchie Blackmore, Rainbow, entre 1979 et 1983.",
     
-        matosBass1: "Vigier Excess 2",
-        matosBass2: "Fender Precision",
-        matosBass3: "Vigier Excess Roger Glover Custom Electric Bass Guitar",
+        matosBass1: "- Vigier Excess 2",
+        matosBass2: "- Fender Precision",
+        matosBass3: "- Vigier Excess Roger Glover Custom Electric Bass Guitar",
         
-        matosAmp1: "TC Electronic Blacksmith + TC Electronic RS410",
-        matosAmp2: "Marshall Major + Marshall Straight-front 4x10 Cabinet",
+        matosAmp1: "- TC Electronic Blacksmith + TC Electronic RS410",
+        matosAmp2: "- Marshall Major + Marshall Straight-front 4x10 Cabinet",
 
-        matosEffect1: "TC Electronic NDR-1 Nova Drive",
-        matosEffect2: "TC Electronic Dark Distortion",
-        matosEffect3: "TC Electronic Hall Of Fame Reverb",
-        matosEffect4: "TC Electronic Spectra Drive",
-        matosEffect5: "TC Electronic Flashback Delay",
+        matosEffect1: "- TC Electronic NDR-1 Nova Drive",
+        matosEffect2: "- TC Electronic Dark Distortion",
+        matosEffect3: "- TC Electronic Hall Of Fame Reverb",
+        matosEffect4: "- TC Electronic Spectra Drive",
+        matosEffect5: "- TC Electronic Flashback Delay",
         
         playTab: "https://www.songsterr.com/a/wsa/deep-purple-highway-star-bass-tab-s490",
         playImgTab: "tab/highway star tab.png",
@@ -181,18 +164,18 @@ const artistes = [
         bioPar4: "Il s'essaie d'abord à la batterie, puis commence la trompette à l'âge de dix ans, sur le conseil d'Urban. Il écoute les maîtres du jazz : Miles Davis, Charlie Mingus, Louis Armstrong, … Flea garde le souvenir de cette période émaillée des bêtises qu’il a pu faire à cette époque, à 9-10 ans : petits cambriolages pour les gangs du Bronx, vols de pièces de voitures, deal de drogues… Un des grands moments de cette période demeure sa rencontre, en 1973, avec son idole Dizzy Gillespie en backstage après un concert, grâce à sa mère : pendant un quart d’heure, le jeune trompettiste a pu témoigner de son amour pour le jazz, la musique et pour Dizzy lui-même qui fut d’ailleurs très touché. Ils trouvèrent même le temps d’échanger quelques notes à la trompette par la suite. En raison des tournées de Walter à travers les États-Unis, la famille Balzary déménage à Los Angeles en 1973. Âgé de 11 ans, il est inscrit à la Bancroft Junior School et il se souvient : « Je suis arrivé d'Australie en 1972 et depuis lors Los Angeles s'est convertie en une cochonnerie, dans tous les sens du terme. »",
         bioPar5: "Dans l'émission Behind The Music sur VH1, il a confessé qu'au début il ne s'intéressait pas au rock et voulait devenir musicien de jazz comme son beau-père mais a changé d'avis après avoir découvert la musique de Kiss, Jimi Hendrix et Led Zeppelin par l'intermédiaire d'Hillel Slovak, futur membre des Red Hot Chili Peppers. Il devient rapidement, grâce à de nombreuses heures de travail consacrées quotidiennement à la trompette l’élève préféré de ses professeurs de musique. Ces derniers le considèrent même comme le meilleur trompettiste qu’ils aient eu depuis Harv Helbert (qui fréquentait l'établissement quelques années plus tôt).",
     
-        matosBass1: "Ernie Ball Music Man Stringray Bass",
-        matosBass2: "Fleabass",
-        matosBass3: "Fender Flea Signature Jazz Bass",
+        matosBass1: "- Ernie Ball Music Man Stringray Bass",
+        matosBass2: "- Fleabass",
+        matosBass3: "- Fender Flea Signature Jazz Bass",
         
-        matosAmp1: "Gallien-Krueger 2001RB Amplifier Head / Gallien-Krueger 800RB Bass Amp Head",
-        matosAmp2: "Fender Rumble 200 c3 / Mesa Boogie 2x15 Road Ready Bass Cabinet",
+        matosAmp1: "- Gallien-Krueger 2001RB Amplifier Head / Gallien-Krueger 800RB Bass Amp Head",
+        matosAmp2: "- Fender Rumble 200 c3 / Mesa Boogie 2x15 Road Ready Bass Cabinet",
 
-        matosEffect1: "Electro-Harmonix Original Q-Tron",
-        matosEffect2: "Malekko Heavy Industry B:ASSMASTER",
-        matosEffect3: "MXR M133 Micro Amp",
-        matosEffect4: "Boss ODB-3 Bass OverDrive",
-        matosEffect5: "Electro-Harmonix Bassballs Nano",
+        matosEffect1: "- Electro-Harmonix Original Q-Tron",
+        matosEffect2: "- Malekko Heavy Industry B:ASSMASTER",
+        matosEffect3: "- MXR M133 Micro Amp",
+        matosEffect4: "- Boss ODB-3 Bass OverDrive",
+        matosEffect5: "- Electro-Harmonix Bassballs Nano",
         
         playTab: "https://www.songsterr.com/a/wsa/red-hot-chili-peppers-around-the-world-bass-tab-s14046",
         playImgTab: "tab/around the world - tab.png",
@@ -209,18 +192,18 @@ const artistes = [
         bioPar4: "McKagan quitta l'État de Washington pour la Californie à l'âge de 19 ans, et joua dans des douzaines de groupes de rock autour de Los Angeles incluant « Ten Minute Warning » (il fut remplacé par Daniel House de Skin Yard), et un groupe hard-core punk appelé The Fartz. Répondant à une annonce dans un magazine de bassistes, il rencontra le guitariste Slash et le batteur Steven Adler du groupe The Road Crew. Duff cherchait du punk avec un penchant pour le rock des années '70, mais il ne trouva que deux gars aux cheveux longs à la place.",
         bioPar5: "Il dit « Quand j'ai rencontré Slash et Steven Adler pour la première fois, c'était dingue, parce que je n'avais jamais rencontré des mecs comme eux avant - des gens de L.A. La nuit on sortait et on buvait, et on a eu ce groupe de malades. C'était le groupe de Slash, Road Crew. »",
     
-        matosBass1: "Fender Aerodyne Jazz Bass",
-        matosBass2: "Fender Duff McKagan Precision Bass",
-        matosBass3: "Fender Jazz Bass Special",
+        matosBass1: "- Fender Aerodyne Jazz Bass",
+        matosBass2: "- Fender Duff McKagan Precision Bass",
+        matosBass3: "- Fender Jazz Bass Special",
         
-        matosAmp1: "Gallien-Krueger 800RB Bass Amp Head / Gallien-Krueger 2001RB Amplifier Head / Gallien Krueger MB 800",
-        matosAmp2: "Gallien-Krueger 410RBH 800W 4x10 Bass Cab with Horn",
+        matosAmp1: "- Gallien-Krueger 800RB Bass Amp Head / Gallien-Krueger 2001RB Amplifier Head / Gallien Krueger MB 800",
+        matosAmp2: "- Gallien-Krueger 410RBH 800W 4x10 Bass Cab with Horn",
 
-        matosEffect1: "Tech 21 SansAmp Bass Driver DI",
-        matosEffect2: "MXR M-83 Bass Chorus Deluxe",
-        matosEffect3: "MXR M80 Bass D.I.+",
-        matosEffect4: "TC Electronic Corona Chorus",
-        matosEffect5: "MXR M-182 El Grande™ Bass Fuzz",
+        matosEffect1: "- Tech 21 SansAmp Bass Driver DI",
+        matosEffect2: "- MXR M-83 Bass Chorus Deluxe",
+        matosEffect3: "- MXR M80 Bass D.I.+",
+        matosEffect4: "- TC Electronic Corona Chorus",
+        matosEffect5: "- MXR M-182 El Grande™ Bass Fuzz",
         
         playTab: "https://www.songsterr.com/a/wsa/guns-n-roses-sweet-child-o-mine-bass-tab-s23",
         playImgTab: "tab/sweet child o mine - tab.png",
@@ -228,6 +211,8 @@ const artistes = [
     },
 ]
 
+
+// Display Artiste
 
 const displayArtiste = (num) => {
     const artistesNode = artistes.filter((art, index) => index == num).map(artiste => {
@@ -237,6 +222,9 @@ const displayArtiste = (num) => {
         artisteCont.innerHTML = ""
     artisteCont.append(...artistesNode)
 }
+
+
+// function SideBar
 
 let condition = false
 
@@ -261,6 +249,64 @@ sideBarMenu.addEventListener('click', () => {
         condition = !condition
     }
 })
+
+let sbS = document.querySelector('.sba1');
+sbS.addEventListener('click', (event) => {
+    idsbS.style.backgroundColor = "#FF7B00"
+    idsbA.style.backgroundColor = "#6D3500"
+    idsbB.style.backgroundColor = "#6D3500"
+    idsbC.style.backgroundColor = "#6D3500"
+    idsbD.style.backgroundColor = "#6D3500"
+    event.preventDefault()
+    displayArtiste(0)
+})
+
+let sbA = document.querySelector('.sba2');
+sbA.addEventListener('click', (event) => {
+    idsbA.style.backgroundColor = "#FF7B00"
+    idsbS.style.backgroundColor = "#6D3500"
+    idsbB.style.backgroundColor = "#6D3500"
+    idsbC.style.backgroundColor = "#6D3500"
+    idsbD.style.backgroundColor = "#6D3500"
+    event.preventDefault()
+    displayArtiste(1)
+})
+
+let sbB = document.querySelector('.sba3');
+sbB.addEventListener('click', (event) => {
+    idsbB.style.backgroundColor = "#FF7B00"
+    idsbS.style.backgroundColor = "#6D3500"
+    idsbA.style.backgroundColor = "#6D3500"
+    idsbC.style.backgroundColor = "#6D3500"
+    idsbD.style.backgroundColor = "#6D3500"
+    event.preventDefault()
+    displayArtiste(2)
+})
+
+let sbC = document.querySelector('.sba4');
+sbC.addEventListener('click', (event) => {
+    idsbC.style.backgroundColor = "#FF7B00"
+    idsbS.style.backgroundColor = "#6D3500"
+    idsbB.style.backgroundColor = "#6D3500"
+    idsbA.style.backgroundColor = "#6D3500"
+    idsbD.style.backgroundColor = "#6D3500"
+    event.preventDefault()
+    displayArtiste(3)
+})
+
+let sbD = document.querySelector('.sba5');
+sbD.addEventListener('click', (event) => {
+    idsbD.style.backgroundColor = "#FF7B00"
+    idsbS.style.backgroundColor = "#6D3500"
+    idsbB.style.backgroundColor = "#6D3500"
+    idsbC.style.backgroundColor = "#6D3500"
+    idsbA.style.backgroundColor = "#6D3500"
+    event.preventDefault()
+    displayArtiste(4)
+})
+
+
+// function Artiste
 
 const createArtiste = (artiste) => {
     console.log(artiste);
@@ -298,7 +344,6 @@ const createArtiste = (artiste) => {
         const br5 = document.createElement('br')
         const par5 = document.createElement('p')
         par5.innerText = artiste.bioPar5
-        
 
         itemh1.appendChild(img)
         div1.append(itemh1, par1, br1, par2, br2, par3, br3, par4, br4, par5, br5)
@@ -316,45 +361,43 @@ const createArtiste = (artiste) => {
         ulBass.innerText = "Basses :"
 
         const liBass1 = document.createElement('li')
-        liBass1.innerText = " - " + artiste.matosBass1
+        liBass1.innerText = artiste.matosBass1
 
         const liBass2 = document.createElement('li')
-        liBass2.innerText = " - " + artiste.matosBass2
+        liBass2.innerText = artiste.matosBass2
 
         const liBass3 = document.createElement('li')
-        liBass3.innerText = " - " + artiste.matosBass3
+        liBass3.innerText = artiste.matosBass3
 
         const brAmp = document.createElement('br')
         const ulAmp = document.createElement('ul')
         ulAmp.innerText = "Amplis :"
 
         const liAmp1 = document.createElement('li')
-        liAmp1.innerText = " - " + artiste.matosAmp1
+        liAmp1.innerText = artiste.matosAmp1
         
         const liAmp2 = document.createElement('li')
-        liAmp2.innerText = " - " + artiste.matosAmp2
+        liAmp2.innerText = artiste.matosAmp2
 
         const brEft = document.createElement('br')
         const ulEft = document.createElement('ul')
         ulEft.innerText = "Effets :"
 
         const liEft1 = document.createElement('li')
-        liEft1.innerText = " - " + artiste.matosEffect1
+        liEft1.innerText = artiste.matosEffect1
         
         const liEft2 = document.createElement('li')
-        liEft2.innerText = " - " + artiste.matosEffect2
+        liEft2.innerText = artiste.matosEffect2
 
         const liEft3 = document.createElement('li')
-        liEft3.innerText = " - " + artiste.matosEffect3
+        liEft3.innerText = artiste.matosEffect3
 
         const liEft4 = document.createElement('li')
-        liEft4.innerText = " - " + artiste.matosEffect4
+        liEft4.innerText = artiste.matosEffect4
 
         const liEft5 = document.createElement('li')
-        liEft5.innerText = " - " + artiste.matosEffect5
+        liEft5.innerText = artiste.matosEffect5
         const brEftEnd = document.createElement('br')
-
-
 
         ulEft.append(liEft1, liEft2, liEft3, liEft4, liEft5)
         ulAmp.append(liAmp1, liAmp2)
@@ -388,8 +431,6 @@ const createArtiste = (artiste) => {
 
         const youtube = document.createElement('iframe')
         youtube.src = artiste.playYt
-        // youtube.style.width = "750px"
-        // youtube.style.height = "7000px"
 
         const coment = document.createElement('textarea')
 
@@ -400,6 +441,7 @@ const createArtiste = (artiste) => {
         
         div31.append(tab, yt)
         div3.append(item3h1, div31)
+
 
         divAll.append(div1, div2, div3)
 

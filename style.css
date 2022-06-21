@@ -31,7 +31,7 @@
 .boxshadow5 {
     background: radial-gradient(closest-side, #FF7B00, #6D3500, black);
     display: flex;
-    flex-direction: row nowrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     color: whitesmoke;
@@ -113,7 +113,6 @@ ul .myNav {
     justify-content: space-between;
     padding-left: 50px;
     padding: 15px 0;
-    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     font-weight: bold;
     box-shadow: -0.5px -0.5px 1px #999;
@@ -144,21 +143,14 @@ h3 {
 
 a.puce h3{
     height: 0;
-    /* margin: 5px; */
     border-bottom: 30px solid black;
     border-radius: 30%;
-    /* border-left: 20px solid transparent; */
-    /* border-right: 20px solid transparent; */
 }
 
 a.puce h3:hover {
-    /* trapeze */
     height: 0;
-    /* margin: 5px; */
     border-bottom: 30px solid rgb(255, 255, 0, 0.15);
     border-radius: 30%;
-    /* border-left: 20px solid transparent ; */
-    /* border-right: 20px solid transparent; */
     filter: drop-shadow(1px 0 1px white);
     box-shadow: 1px 1px 1px white, -1px -1px 1px white;
 }
@@ -177,13 +169,10 @@ a.puce h3:hover {
 }
 
 .sidebar {
-    margin-left: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: left;
-    /* flex: 1; */
-    height: auto;
 }
 
 .sb {
@@ -211,6 +200,15 @@ a.puce h3:hover {
     border-bottom: 1px solid grey;
     box-shadow: 0px 1px 1px black;
     margin-bottom: 1px;
+}
+
+.sba:hover {
+    background-color: #FF7B00;
+    box-shadow: inset 10px 10px 10px #6D3500, inset -10px -10px 10px #6D3500;
+}
+
+#sbLast {
+    border-bottom-right-radius: 25%;
 }
 
 .sba a {
@@ -305,7 +303,7 @@ h1 img {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     /* width: 100%; */
     margin: 10px;
     border-radius: 25px;
